@@ -1,0 +1,9 @@
+body{
+    background: #1488CC;
+}
+
+.logo {
+    margin-right: auto; 
+    margin-left: auto;
+    width: 50%;
+}
