@@ -18,7 +18,7 @@ usersCtrl.signup = async (req, res, next) => {
         errors.push({text: 'Passwords must be at least 4 characters.'})
     }
     if (errors.length > 0) {
-        res.render('users/signup', {
+        res.render('/', {
             errors,
             name,
             email,
@@ -29,23 +29,23 @@ usersCtrl.signup = async (req, res, next) => {
         const emailUser = await User.findOne({email: email})
         if (emailUser) {
             req.flash('error_msg', 'The email is already in use.')
-            res.redirect('/users/signup')
+            res.redirect('/')
         } else {
             const newUser = new User({name, email, password})
             newUser.password = await newUser.encryptPassword(password)
             await newUser.save()
             req.flash('success_msg', 'You are registered')
-            res.redirect('/users/signin')
+            res.redirect('/')
         }
     }
 }
 
 usersCtrl.renderSigninForm = (req, res, next) => {
-    res.render('users/signin')
+    res.render('/')
 }
 
 usersCtrl.signin = passport.authenticate('local', {
-    failureRedirect: '/users/signin',
+    failureRedirect: '/',
     successRedirect: '/notes',
     failureFlash: true
 })
@@ -53,7 +53,7 @@ usersCtrl.signin = passport.authenticate('local', {
 usersCtrl.logout = (req, res, next) => {
     req.logout()
     req.flash('success_msg', 'You are logged out now.')
-    res.redirect('/users/signin')
+    res.redirect('/')
 }
 
 module.exports = usersCtrl

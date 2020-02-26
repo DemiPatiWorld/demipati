@@ -1,7 +1,235 @@
-<div class="jumbotron mt-4">
-    <h1 class="display-4">Notes App NodeJs and MongoDB</h1>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam illo dolorum repellendus hic quibusdam reprehenderit placeat, molestiae consectetur! Ullam rem distinctio repudiandae maiores! Consectetur distinctio aliquam veritatis facere dignissimos.</p>
-    <hr class="my-4">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque quia sapiente sit nulla et repellat laborum impedit excepturi culpa nisi, aspernatur sed, a animi at, unde ratione voluptate officiis?</p>
-    <a href="https://www.youtube.com/watch?v=Wbn9Sp3z0GU" class="btn btn-primary" >YouTube</a>
+{{!-- Slider --}}
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner carousel-fade">
+        <div class="carousel-item active">   
+            <div class="card bg-light text-white text-center ">
+                <img src="img/slider1.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <p id="texto-centrado" class="card-text">Revaloriza, conectando de <br> la manera más fácil</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item card bg-light text-white text-center">
+            <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+            <div class="card-img-overlay">
+                    <p id="texto-centrado" class="card-text">Revaloriza, conectando de <br> la manera más fácil</p>
+            </div>
+        </div>
+        <div class="carousel-item card bg-light text-white text-center">
+            <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+            <div class="card-img-overlay">
+                    <p id="texto-centrado" class="card-text">Revaloriza, conectando de <br> la manera más fácil</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
+
+<div class="text-center mx-auto publica-buscador" style="margin-top: 2rem;">
+    <button class="btn btn-danger my-sm-0 px-md-4 btn-lg" style="border-radius: 30px; padding: 15px 70px 15px 70px" type="submit">PUBLICA AQUÍ!</button>
+</div>
+<div class="row no-gutters">
+    
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <div class="text-center">
+            <div class="card-body" style="background: #ffffff; padding-bottom:0rem;">
+                <br>
+                <h2 style="font-size: 5.5vmin;">¿Qué materiales de <br> estudio buscas?</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class=" text-center">
+            <div class="card-body" style="background: #ffffff; padding-top:0rem;">
+                <form class="card-body">
+                    <input class="form-control mr-sm-2 rounded-sm" type="search" placeholder="Buscar Libro" aria-label="Search">
+                </form>
+                <button class="card-text btn btn-outline-success my-2 my-sm-0 rounded-sm" type="submit">Buscar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+<hr>
+
+<h2 class="text-center mt-5">Más vistos</h2> 
+<div class="card-body" style="background: #fafbfc">   
+    <div class="card-body" style="background: #fafbfc">
+        <div  class="card-body text-center" style="background: #fafbfc">  
+            <div class="card-deck justify-content-center" >
+                <div class="card rounded-sm" style="max-width: 21.8rem;">
+                    <img src="img/catalogo/user023-pub24.jpg" class="card-img-top" alt="...">
+                    <div class="card-body rounded-sm">
+                        <h5 class="card-title">Dibujo de Ingeniería - P. Kaster </h5>
+                        <p>Comprado: 04-19  | Etado: 9 de 10 | <br> Temática : Arquitectura | Lo usé en: Dibujo de Ingeniería II </p>
+                        <p>Este libro lo compré en junio del 2018 pero no lo he usado casi nunca, está guardado intacto.</p>
+                        <h4>S/. 37</h4>
+                        <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary rounded-sm">Ver más</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary rounded-sm">Comprar</button>
+                            </div>
+                            <small class="text-muted"> 9 de 10 </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-sm" style="max-width: 21.8rem;">
+                    <img src="img/catalogo/user023-pub22.jpg" class="card-img-top" alt="...">
+                    <div class="card-body rounded-sm">
+                        <h5 class="card-text card-title">Guía PMBOK 6th - PMI </h5>
+                        <p>Comprado: 04-19  | Etado: 9 de 10 | Temática : Empresas | Lo usé en: Gestio de Proyectos </p>
+                        <p>Este libro lo compré en junio del 2018 pero no lo he usado casi nunca, está guardado intacto.</p>
+                        <h4>s/. 45</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary rounded-sm">Ver más</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary rounded-sm">Comprar</button>
+                            </div>
+                            <small class="text-muted"> 9 de 10 </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-sm" style="max-width: 21.8rem;">
+                    <img src="img/catalogo/user023-pub23.jpg" class="card-img-top" alt="...">
+                    <div class="card-body rounded-sm">
+                        <h5 class="card-text">Derecho Romano - Esitares </h5>
+                        <p>Comprado: 04-19  | Etado: 9 de 10 | Temática : Derecho | Lo usé en: Derecho ROmano I </p>
+                        <p>Este libro lo compré en junio del 2018 pero no lo he usado casi nunca, está guardado intacto.</p>
+                        <h4>s/. 33</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary rounded-sm">Ver más</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary rounded-sm">Comprar</button>
+                            </div>
+                            <small class="text-muted"> 9 de 10 </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card-deck justify-content-center" >
+                <div class="card rounded-sm" style="max-width: 21.8rem;">
+                    <img src="img/catalogo/user023-pub25.jpg" class="card-img-top" alt="...">
+                    <div class="card-body rounded-sm">
+                        <h5 class="card-text card-title">Los Desposeidos - Minotauro </h5>
+                        <p>Comprado: 04-19  | Etado: 9 de 10 | Temática : Economía | Lo usé en: Microeconomía </p>
+                        <p>Este libro lo compré en junio del 2018 pero no lo he usado casi nunca, está guardado intacto.</p>
+                        <h4>s/. 27</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            </div>
+                            <small class="text-muted"> 9 de 10 </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-sm" style="max-width: 21.8rem;">
+                    <img src="img/catalogo/user023-pub26.jpg" class="card-img-top" alt="...">
+                    <div class="card-body rounded-sm">
+                        <h5 class="card-text card-title">Scrum MASTER - Scrum </h5>
+                        <p>Comprado: 04-19  | Etado: 9 de 10 | Temática : Desarrollo | Lo usé en: Gestion del desarrollo </p>
+                        <p>Este libro lo compré en junio del 2018 pero no lo he usado casi nunca, está guardado intacto.</p>
+                        <h4>s/. 42</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            </div>
+                            <small class="text-muted"> 9 de 10 </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-sm" style="max-width: 21.8rem;">
+                    <img src="img/catalogo/user023-pub27.jpg" class="card-img-top" alt="...">
+                    <div class="card-body rounded-sm">
+                        <h5 class="card-text card-title">Genética Humana - Solari </h5>
+                        <p>Comprado: 04-19  | Etado: 9 de 10 | Temática : Medicina | Lo usé en: Genética I </p>
+                        <p>Este libro lo compré en junio del 2018 pero no lo he usado casi nunca, está guardado intacto.</p>
+                        <h4>s/. 68</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm       btn-outline-secondary">Ver más</button>
+                                <button type="button" class="btn btn-sm       btn-outline-secondary">Comprar</button>
+                            </div>
+                            <small class="text-muted"> 9 de 10 </small>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<section  class="my-5">
+    <div class="container-fluid my-4">
+        <h2 class="text-center" >Descubre cómo funciona la plataforma</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Paso 1</strong>
+                        <h3 class="mb-0">Registrate </h3>
+                        <br/>
+                        <p class="card-text mb-auto">Proporcionanos tus datos para que puedas conectarte con usuarios que venden o compran libros cerca de tu centro de estudios.</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="img-fluid rounded" src="/img/working.jpg" width="200" alt="Dibujo de Ingeniería - P. Kaster" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Paso 2</strong>
+                        <h3 class="mb-0">Sube tu producto y valorízalo</h3><br/>
+                        <p class="mb-auto">Entra al <a href="/">Formulario</a> de subir libro, indícanos las carácteristicas de tu libro y será publicada en la plataforma</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="img-fluid rounded" src="/img/working.jpg" width="200" alt="Dibujo de Ingeniería - P. Kaster" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Paso 3</strong>
+                        <h3 class="mb-0">Contacta con el comprador</h3><br/>
+                        <p class="mb-auto">Recibirás notificaciones de personas interesesadas en comprar tu producto, contacta con uno de ellos y vendele</p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="img-fluid rounded" src="/img/working.jpg" width="200" alt="Dibujo de Ingeniería - P. Kaster" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Paso 4</strong>
+                        <h3 class="mb-0">Entrega</h3><br/>
+                        <p class="mb-auto">Tienes la posibilidad de encontrar en la plataforma a otra persona que puede hacer el recojo y entrega de tu producto. <a href="/">Contáctalo</a></p>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="img-fluid rounded" src="/img/working.jpg" width="200" alt="Dibujo de Ingeniería - P. Kaster" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+
+
+

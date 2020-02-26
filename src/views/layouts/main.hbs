@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes App</title>
+    <title>DemiPati</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- BOOTSTRAP 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css">
+    {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css"> --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
     {{>navigation}}
 
-    <main class="container p-5">
-        {{>messages}}
-        {{>errors}}
-        {{{body}}}
-    </main>
+    {{>messages}}
+
+    {{>errors}}
+
+    {{{body}}}
+
+<footer className="page-footer font-small blue">
+    <hr>
+    <div class="container">
+        <div class="text-center center-block">
+            <p class="txt-railway">- Redes sociales -</p>
+            <br />
+            <a href="https://www.facebook.com/Demipati-112461780153415/" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://instagram.com" target="_blank"><i id="social-gp" class="fa fa-instagram fa-3x social"></i></a>
+                <a href="mailto:demipati@gmail.com" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+        <hr>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright :
+        <a href="/"> DemiPati</a>
+    </div>  
+</footer>
 
     <!-- BOOTSTRAP 4 -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
