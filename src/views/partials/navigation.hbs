@@ -25,7 +25,7 @@
                 <nav class="navbar navbar-light bg-light">
                     <form class="form-inline">
                         <div class="publica">
-                            <button class="btn btn-danger my-2 my-sm-0 form-control mr-sm-2 rounded-sm">PUBLICA AQUÍ!</button>
+                            <button type="button" class="btn btn-danger my-2 my-sm-0 form-control mr-sm-2 rounded-sm" data-toggle="modal" data-target="#registroModal">PUBLICA AQUÍ!</button>
                         </div>
                         {{!-- <a href="/users/signup" class="btn btn-outline-primary my-2 my-sm-0 form-control mr-sm-2 rounded-sm" >Regístrate</a> --}}
                         <button type="button" class="btn btn-outline-primary my-2 my-sm-0 form-control mr-sm-2 rounded-sm" data-toggle="modal" data-target="#registroModal">
@@ -55,11 +55,11 @@
                                         <div class="form-group">
                                             <input type="email" class="form-control rounded-sm"                     name="email" placeholder="Correo Universitario">
                                             <p style="margin-bottom: 0em; color: #FFF"                  class="text-right" ><b>¿No tienes una cuenta?</b></p>
-                                            <a href="/users/signup" style="color: #F19900;"                     class="text-right"><h6 class="text-right">Regístrate</                  h6></a>
+                                            <a href="/users/signup" style="color: rgb(0, 16, 241);" class="text-right"><h6 class="text-right">Regístrate</                  h6></a>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control                  rounded-sm" name="password" placeholder="Contraseña">
-                                            <a href="/" style="color: #F19900;"                     class="text-right"><h6 class="text-right">¿Se te                    olvidó tu contraseña?</h6></a>
+                                            <input type="password" class="form-control rounded-sm" name="password" placeholder="Contraseña">
+                                            <a href="/" style="color: rgb(0, 16, 241);" class="text-right"><h6 class="text-right">¿Se te olvidó tu contraseña?</h6></a>
                                         </div>
                                         <div class="checkbox mb-3 text-left">
                                                 <label style="color: #FFF">
@@ -67,7 +67,7 @@
                                                 </label>
                                             </div>
                                         <button class="btn btn-primary btn-block rounded-sm" >
-                                            Signin
+                                           Entrar 
                                         </button>
                                     </form>
                                 </div>

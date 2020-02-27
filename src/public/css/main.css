@@ -88,3 +88,42 @@ body{
 #social-em:hover {
     color: #f39c12;
 }
+
+.portfolio-item-container .mask-style-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(49, 57, 63, 0.5);
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+.portfolio-item-container .portfolio-img:hover .mask-style-1 {
+    opacity: 1;
+}
+
+.zoom-hover img {
+    transition: all 3s ease-in-out 0s;
+    -webkit-transition: all 3s ease-in-out 0s;
+    -moz-transition: all 3s ease-in-out 0s;
+    -o-transition: all ease-in-out 0s;
+}
+
+.zoom-hover:hover img {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+}
+
+.portfolio-img {
+    position: relative;
+    overflow: hidden;
+}
